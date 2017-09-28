@@ -9,6 +9,5 @@ it('renders without crashing', () => {
 });
 
 it("renders header for title page", ()=>{
-  const app = mount(<App />)
-  expect(app.find('.subtitle').text()).toEqual('Product Reviews App')
-});
+  const app = mount(<App />
+  expect(app.find('.subtitle').text()).toEqual('Product Reviews App')});
