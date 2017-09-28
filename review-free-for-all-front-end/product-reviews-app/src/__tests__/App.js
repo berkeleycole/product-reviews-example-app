@@ -8,7 +8,7 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
 });
 
-it("renders create a cat form", ()=>{
+it("renders header for title page", ()=>{
   const app = mount(<App />)
-  expect(app.find('.subtitle').text()).toEqual('Add a Cat')
+  expect(app.find('.subtitle').text()).toEqual('Product Reviews App')
 });
