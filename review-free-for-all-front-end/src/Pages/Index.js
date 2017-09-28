@@ -28,15 +28,15 @@ class Index extends Component {
       <div>
         <h1>Products</h1>
         <ol>
-          {this.state.products.map((product, index)=>{
-            return(
-            <li key ={index}>
-              <h3>  Name: {product.name} </h3>
-                Description: {product.description}
-            </li>
-          )
+            {this.state.products.map((product, index)=>{
+                return(
+                    <li key ={index}>
+                        <h3>  Name: {product.name}</h3>
+                        <p>   Description: {product.description} </p>
+                      </li>
+                )
+            })
           }
-          )}
         </ol>
       </div>
     );
