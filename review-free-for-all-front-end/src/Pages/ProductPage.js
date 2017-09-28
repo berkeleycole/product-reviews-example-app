@@ -6,10 +6,17 @@ import {
 
 
 class ProductPage extends Component {
+  constructor(props){
+      super(props)
+      this.state = {
+        pr
+      }
+  }
+
   render() {
     return (
       <div>
-      
+
       </div>
     );
   }
