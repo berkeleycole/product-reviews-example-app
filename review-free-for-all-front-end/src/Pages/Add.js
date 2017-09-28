@@ -16,7 +16,7 @@ class Add extends Component {
   render() {
     return (
       <Grid>
-        <PageHeader>
+        <PageHeader className='Header'>
           Add A Product
         </PageHeader>
         <Form horizontal>

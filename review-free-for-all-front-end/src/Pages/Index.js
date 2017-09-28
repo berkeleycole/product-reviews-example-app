@@ -12,11 +12,11 @@ class Index extends Component {
     this.state = {
       products: [
         {id: 0,
-        name: 'LFGLAFG',
+        name: 'Product 1',
         description: 'asdf',
         },
         {id: 1,
-        name: 'ADFGKSDG',
+        name: 'Product 2',
         description: 'asdf',
         }
       ]
@@ -26,19 +26,17 @@ class Index extends Component {
   render() {
     return (
       <div>
-        <h1>Products</h1>
-        <ol>
+        <h1 className='Header'>Products</h1>
           {
             this.state.products.map((product, index)=>{
                 return(
-                    <li key ={index}>
+                    <div>
                       <h3>Name: {product.name}</h3>
                       <p>Description: {product.description}</p>
-                    </li>
+                      </div>
                 )
             })
           }
-        </ol>
 
       </div>
     );

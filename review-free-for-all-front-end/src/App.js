@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <Grid>
-        <PageHeader className="class">
+        <PageHeader className="mainApp">
           Product Reviews App
         </PageHeader>
         <Add />
