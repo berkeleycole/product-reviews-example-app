@@ -28,6 +28,13 @@ class ProductPage extends Component {
         <p>   {this.state.products[0].description}</p>
         <h3>  Reviews </h3>
         <p> {this.state.products[0].reviews} </p>
+        <h3>  Add Review </h3>
+        <form>
+        <textarea rows="5" cols="40">
+          </textarea>
+          <br></br>
+        <button type="submit">Submit</button>
+        </form>
       </div>
     );
   }
