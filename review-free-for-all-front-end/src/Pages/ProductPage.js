@@ -13,6 +13,7 @@ class ProductPage extends Component {
           {id: 0,
           name: 'Product 1',
           description: 'asdf',
+          reviews: 'I WUV DIS PRODUCT'
           }
         ]
       }
@@ -23,8 +24,10 @@ class ProductPage extends Component {
     return (
       <div>
         <h1 className='Header'> Product Profile Page </h1>
-        <h3>  {this.state.products[0].name}</h3>
+        <h2>  {this.state.products[0].name}</h2>
         <p>   {this.state.products[0].description}</p>
+        <h3>  Reviews </h3>
+        <p> {this.state.products[0].reviews} </p>
       </div>
     );
   }
