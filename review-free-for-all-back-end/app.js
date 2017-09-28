@@ -8,6 +8,22 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 app.use(validator())
 
+Product.create({
+  name: 'Pencil',
+  description: 'wood with a pointy end.'
+}).then(function(product){
+  console.log(product.get())
+
+  return product.createReview({
+    review: 'Very sharp!',
+  })
+})
+.then(function(review){
+  console.log("New Review", review.get())
+}).catch(function(error){
+  console.log(error)
+})
+
 app.get('/', (req, res) => {
   res.json({message: 'API Example App'})
 });

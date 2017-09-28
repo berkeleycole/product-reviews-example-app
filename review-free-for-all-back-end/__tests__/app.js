@@ -2,6 +2,7 @@ const request = require('supertest')
 const app = require('../app')
 
 jest.mock('../models/product')
+jest.mock('../models/review')
 
 describe("App", ()=>{
   //Products Index Test
@@ -66,4 +67,12 @@ describe("App", ()=>{
       expect(response.statusCode).toBe(200)
     })
   })
+
+  it("Lists reviews", ()=>{
+    return request(app).get("/review").then(response =>{
+  	expect(response.statusCode).toBe(200)
+  	expect(response.body.review[0].review).toBe('Very sharp!')
+    })
+  })
+
 })
