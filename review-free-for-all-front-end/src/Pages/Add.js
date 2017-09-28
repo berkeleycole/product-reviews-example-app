@@ -5,6 +5,7 @@ import {
   FormGroup,
   FormControl,
   ControlLabel,
+  InputGroup,
   Button
 } from 'react-bootstrap'
 
@@ -16,14 +17,12 @@ class Add extends Component {
           Add A Product
         </PageHeader>
         <form>
-          <ControlLabel>Name</ControlLabel>
-          <FormGroup
-            onChange={this.handleChange}
-          >
-            <FormControl componentClass="text" placeholder="text" value="name"></FormControl>
+          <ControlLabel>Product Name</ControlLabel>
+          <FormGroup>
+            <FormControl type="text" placeholder="Name" />
           </FormGroup>
           <FormGroup>
-            <ControlLabel>Description</ControlLabel>
+            <ControlLabel>Product Description</ControlLabel>
             <FormControl componentClass="textarea"></FormControl>
           </FormGroup>
           <FormControl.Feedback />
