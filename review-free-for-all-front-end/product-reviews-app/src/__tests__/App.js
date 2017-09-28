@@ -10,5 +10,5 @@ it('renders without crashing', () => {
 
 it("renders create a cat form", ()=>{
   const app = mount(<App />)
-  expect(app.find('.subtitle').text()).toEqual('Add a Cat')
+  expect(app.find('.class').text()).toEqual('Product Reviews App')
 });
