@@ -3,6 +3,8 @@ import {
   Grid,
   PageHeader
 } from 'react-bootstrap'
+import Add from './pages/Add'
+import Index from './pages/Index'
 
 class App extends Component {
   render() {
