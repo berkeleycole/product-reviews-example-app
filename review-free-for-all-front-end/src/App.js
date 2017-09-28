@@ -11,6 +11,15 @@ import styles from './App.css'
 class App extends Component {
   render() {
     return (
+<<<<<<< HEAD
+		<div>
+	      <Grid>
+	        <PageHeader>
+				<h1 className='subtitle'>Product Reviews App</h1>
+	        </PageHeader>
+	      </Grid>
+		</div>
+=======
       <Grid>
         <PageHeader className="mainApp">
           Product Reviews App
@@ -19,8 +28,10 @@ class App extends Component {
         <Index />
         <ProductPage />
       </Grid>
+>>>>>>> 5909555788d1a9adf8a2a40b3b7232f2040094e3
     );
   }
 }
+
 
 export default App;
