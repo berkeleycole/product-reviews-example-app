@@ -3,6 +3,7 @@ import {
   Grid,
   PageHeader
 } from 'react-bootstrap'
+import Add from './pages/Add'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <PageHeader>
           Product Reviews App
         </PageHeader>
+        <Add />
       </Grid>
     );
   }
