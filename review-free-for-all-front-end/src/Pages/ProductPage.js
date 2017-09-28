@@ -11,7 +11,7 @@ class ProductPage extends Component {
       this.state = {
         products: [
           {id: 0,
-          name: 'LFGLAFG',
+          name: 'Product 1',
           description: 'asdf',
           }
         ]
@@ -22,6 +22,7 @@ class ProductPage extends Component {
   render() {
     return (
       <div>
+        <h1 className='Header'> Product Profile Page </h1>
         <h3>  {this.state.products[0].name}</h3>
         <p>   {this.state.products[0].description}</p>
       </div>
