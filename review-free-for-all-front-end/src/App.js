@@ -5,6 +5,8 @@ import {
 } from 'react-bootstrap'
 import Add from './pages/Add'
 import Index from './pages/Index'
+import ProductPage from './pages/ProductPage'
+import styles from './App.css'
 
 class App extends Component {
   render() {
@@ -15,6 +17,7 @@ class App extends Component {
         </PageHeader>
         <Add />
         <Index />
+        <ProductPage />
       </Grid>
     );
   }
