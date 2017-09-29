@@ -18,18 +18,7 @@ class App extends Component {
     super(props)
     this.state = {
       apiUrl: "http://localhost:3000",
-      products: [
-        {id: 0,
-        name: 'Product 1',
-        description: 'asdf',
-        reviews: ['I WUV DIS SO MUCH']
-        },
-        {id: 1,
-        name: 'Product 2',
-        description: 'asdf',
-        reviews: ['DIS AIIGHT']
-        }
-      ],
+      products: [],
       newProductSuccess: false,
       errors: null
     }
@@ -65,15 +54,15 @@ class App extends Component {
 
 
 
-  // componentWillMount(){
-  //   fetch(`${this.state.apiUrl}/`)
-  //   .then((rawResponse) =>{
-  //     return rawResponse.json()
-  //   })
-  //   .then((parsedResponse)=>{
-  //     this.setState({products: parsedResponse.products})
-  //   })
-  // }
+  componentWillMount(){
+    fetch(`${this.state.apiUrl}/`)
+    .then((rawResponse) =>{
+      return rawResponse.json()
+    })
+    .then((parsedResponse)=>{
+      this.setState({products: parsedResponse.products})
+    })
+  }
 
   render() {
     return (

@@ -9,7 +9,6 @@ import {
   FormControl,
   ControlLabel,
   InputGroup,
-  Button,
   Alert,
   HelpBlock
 } from 'react-bootstrap'
@@ -54,7 +53,7 @@ class Add extends Component {
               }
           </FormGroup>
           <FormControl.Feedback />
-          <Button type="submit">Submit</Button>
+          <Button type="submit" onSubmit={this.props.onSubmit.bind(this)}>Submit</Button>
         </form>
       </Grid>
     );
