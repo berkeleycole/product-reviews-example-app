@@ -9,7 +9,6 @@ import {
   FormControl,
   ControlLabel,
   InputGroup,
-  Button,
   Alert,
   HelpBlock
 } from 'react-bootstrap'
