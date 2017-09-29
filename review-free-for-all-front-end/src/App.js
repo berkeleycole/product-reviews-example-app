@@ -60,7 +60,8 @@ class App extends Component {
       return rawResponse.json()
     })
     .then((parsedResponse)=>{
-      this.setState({products: parsedResponse.products})
+      console.log(parsedResponse)
+      this.setState({products: parsedResponse.product})
     })
   }
 
