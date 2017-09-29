@@ -3,9 +3,9 @@ import {
   Grid,
   PageHeader
 } from 'react-bootstrap'
-import Add from './pages/Add'
-import Index from './pages/Index'
-import ProductPage from './pages/ProductPage'
+import Add from './Pages/Add'
+import Index from './Pages/Index'
+import ProductPage from './Pages/ProductPage'
 import styles from './App.css'
 import {
   BrowserRouter as Router,
